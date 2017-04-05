@@ -1,14 +1,19 @@
 <body>
 <h1>WELCOME</h1>
 <p>Need to send a text? You've come to the right place!</p>
-
+<br>
+<br>
 <%= form_tag("/sms/send", method: "post") do %>
 <!-- add form elements here -->
 <form>
-    <span class="formhead">Enter your message: </span><br>
-    <input type="text" name="message"><br>
-    <span class="formhead">Phone Number: </span><br>
-    <input type="tel" name="usrtel"><br>
-    <input type="submit" value="SEND">
+    <center><span class="formhead">Enter your message: </span><br></center>
+    <br>
+    <center><input type="text" name="message"><br></center>
+    <br>
+    <center><span class="formhead">Phone Number: </span><br></center>
+    <br>
+    <center><input type="tel" name="usrtel"><br></center>
+    <br>
+    <center><input type="submit" value="SEND"></center>
 </form>
 <% end %>
