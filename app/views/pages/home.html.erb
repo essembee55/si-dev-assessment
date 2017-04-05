@@ -1,14 +1,14 @@
-<body style="background-color:aliceblue;">
-<h1 style="font-family: Arial, Helvetica, sans-serif;font-size:80px;text-align:center; color:slategray">WELCOME</h1>
-<p style="font-family: Arial, Helvetica, sans-serif; font-size:20px;text-align:center; color:midnightblue">Need to send a text? You've come to the right place!</p>
+<body>
+<h1>WELCOME</h1>
+<p>Need to send a text? You've come to the right place!</p>
 
 <%= form_tag("/sms/send", method: "post") do %>
 <!-- add form elements here -->
 <form>
-    Enter your message: <br>
+    <span class="formhead">Enter your message: </span><br>
     <input type="text" name="message"><br>
-    Phone Number:<br>
+    <span class="formhead">Phone Number: </span><br>
     <input type="tel" name="usrtel"><br>
-    <input type="submit" value="SUBMIT">
+    <input type="submit" value="SEND">
 </form>
 <% end %>
